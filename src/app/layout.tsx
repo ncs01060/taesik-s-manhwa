@@ -24,9 +24,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ko">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
+
+        <footer className="foot">
+          <p>&copy; 2024 LYM. All rights reserved.</p>
+        </footer>
       </body>
     </html>
   );
